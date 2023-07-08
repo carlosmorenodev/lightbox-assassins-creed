@@ -99,10 +99,10 @@ header {
             transform: scale(0.90);
         }
     }
-    & .img-grande {
-        background-color: aliceblue;
+    & .img-grande {        
         width: 70%;       
-        height: 80vh;
+        
+        object-fit: contain;
     }
 }
 
@@ -123,4 +123,28 @@ footer {
     & a {
         color: #ccc;
     }
+}
+
+/* Responsive */
+
+@media (width <= 992px) {
+    .container {
+        width: 100%;
+    }
+
+    .lightbox {
+        padding:0px;
+        background-color: black;
+    }
+
+    .lightbox {
+        .img-grande {
+            width: 100%;
+            
+            object-fit: contain;
+            
+        }
+
+    }
+
 }
